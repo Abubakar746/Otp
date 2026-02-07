@@ -18,7 +18,7 @@ load_dotenv()
 BOT_NAME = os.environ.get("BOT_NAME", "Ims Master Bot")
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 ADMIN_IDS = os.environ.get("ADMIN_IDS", "").split(",")
-TARGET_GROUP_ID = "-1003726042244" 
+TARGET_GROUP_ID = "-1003741265475" 
 
 LOGIN_URL = os.environ.get("LOGIN_URL", "")
 OTP_URL = os.environ.get("OTP_URL", "")
