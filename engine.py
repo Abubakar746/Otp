@@ -1,40 +1,4 @@
-import time
-import os
-import re
-import threading
-import requests
-import queue
-import datetime
-from flask import Flask
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin
-from dotenv import load_dotenv
-load_dotenv()
-
-# ============================================================
-# 🌍 GLOBAL CONFIG (No Logic Change)
-# ============================================================
-
-BOT_NAME = os.environ.get("BOT_NAME", "Ims Master Bot")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-ADMIN_IDS = os.environ.get("ADMIN_IDS", "").split(",")
-TARGET_GROUP_ID = "-1003741265475" 
-
-LOGIN_URL = os.environ.get("LOGIN_URL", "")
-OTP_URL = os.environ.get("OTP_URL", "")
-LOGIN_HEADERS_ENV = os.environ.get("LOGIN_HEADERS", "")
-PANEL_USER = os.environ.get("PANEL_USER", "")
-PANEL_PASS = os.environ.get("PANEL_PASS", "")
-
-# Mapping from Env
-COL_MAP = [int(i)-1 for i in os.environ.get("COL_MAPPING", "1,2,3,6").split(",")]
-CHECK_DELAY = float(os.environ.get("CHECK_DELAY", 1.0))
-
-IS_FIRST_RUN = True
-OTP_QUEUE = queue.Queue()
-PROCESSED_OTP_CACHE = set()
-CACHE_LOCK = threading.Lock()
-
+hgfh
 threads_status = {"collector": None, "sender": None}
 
 app = Flask(__name__)
